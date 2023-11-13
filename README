@@ -1,0 +1,22 @@
+Drugi projekt iz Web2
+
+###########################################################################
+
+Adresa git repozitorija s web-aplikacijom: 
+
+Adresa web-aplikacije:
+
+Popis implementiranih ranjivosti:
+
+1. SQL ubacivanje (SQL Injection)
+2. Loša autentifikacija (Broken Authentication)
+
+
+Napomene: Sve je uspješno implementirano. 
+
+
+Kratke upute kako lokalno pokrenuti i isprobati aplikaciju:
+
+
+
+###########################################################################
