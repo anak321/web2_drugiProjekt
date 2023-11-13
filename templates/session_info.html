@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session Information</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="w3-container w3-padding-32 w3-center">
+        <h2 class="w3-panel w3-blue w3-round-large">Session Information</h2>
+        <div class="w3-panel w3-border w3-light-grey w3-round-large">
+            <p><b>Session Token:</b> {{ session_token }}</p>
+            <p><b>Login Attempts:</b></p>
+            <div class="w3-responsive w3-card-4">
+                <table class="w3-table w3-striped w3-bordered">
+                    <tr class="w3-theme">
+                        <th>Username</th>
+                        <th>Attempts</th>
+                    </tr>
+                    {% for username, attempts in login_attempts.items() %}
+                    <tr>
+                        <td>{{ username }}</td>
+                        <td>{{ attempts }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+        <a href="{{ url_for('home') }}" class="w3-button w3-green w3-round">Go to Home Page</a>
+    </div>
+</body>
+</html>

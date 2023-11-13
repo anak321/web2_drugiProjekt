@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerability Demo</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-container w3-padding">
+    <h2 class="w3-center">Drugi Projekt: SQL Injection and Broken Authentication </h2>
+
+    <div class="w3-card w3-margin">
+        <div class="w3-container w3-orange">
+            <h3>SQL Injection</h3>
+        </div>
+        <form method="post" action="/submit" class="w3-container w3-padding">
+            <label for="message">Message:</label>
+            <input class="w3-input" type="text" name="message" id="message">
+            <label for="pin">PIN:</label>
+            <input class="w3-input" type="password" name="pin" id="pin">
+            <div class="w3-row w3-section">
+                <div class="w3-rest w3-text-orange">
+                    <input class="w3-check" type="checkbox" name="toggle_sql_injection" id="toggle_sql_injection">
+                    <label class="w3-validate" for="toggle_sql_injection">Enable SQL Injection Vulnerability</label>
+                </div>
+            </div>
+            <button class="w3-btn w3-orange w3-margin-top">Submit</button>
+        </form>
+    </div>
+    
+    <div class="w3-container w3-margin-top">
+        <form class="w3-container w3-card-4 w3-light-grey w3-text-orange w3-margin" method="post" action="{{ url_for('login') }}">
+            <h3 class="w3-center">Broken Authentication</h3>
+            <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                <div class="w3-rest">
+                    <input class="w3-input w3-border" name="username" type="text" placeholder="Username">
+                </div>
+            </div>
+            <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-lock"></i></div>
+                <div class="w3-rest">
+                    <input class="w3-input w3-border" name="password" type="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="w3-row w3-section">
+                <div class="w3-rest w3-text-orange">
+                    <input class="w3-check" type="checkbox" name="broken_auth" id="broken_auth">
+                    <label class="w3-validate" for="broken_auth">Enable Broken Authentication Vulnerability</label>
+                </div>
+                <div class="w3-row">
+                    <a href="{{ url_for('session_info') }}">Go to Session Information</a>
+                </div>
+            </div>
+            <div class="w3-row w3-section">
+                <input type="submit" value="Login" class="w3-button w3-block w3-orange">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

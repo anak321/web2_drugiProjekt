@@ -1,0 +1,17 @@
+<html>
+<body>
+    
+    <h1>Login Result</h1>
+    <div>
+        <h2>
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        </h2>
+    </div>
+    <a href="{{ url_for('home') }}">Go to Home Page   </a>
+    <div class="w3-row">
+        <a href="{{ url_for('session_info') }}">Go to Session Information</a>
+    </div>
+</body>
+</html>
