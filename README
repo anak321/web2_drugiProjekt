@@ -1,10 +1,10 @@
 Drugi projekt iz Web2
 
-###########################################################################
 
-Adresa git repozitorija s web-aplikacijom: 
+*******************************************************************************************
+Adresa git repozitorija s web-aplikacijom:   https://github.com/anak321/web2_drugiProjekt
 
-Adresa web-aplikacije:
+Adresa web-aplikacije:	https://web2-drugiprojekt-uhbp.onrender.com
 
 Popis implementiranih ranjivosti:
 
@@ -15,8 +15,8 @@ Popis implementiranih ranjivosti:
 Napomene: Sve je uspješno implementirano. 
 
 
-Kratke upute kako lokalno pokrenuti i isprobati aplikaciju:
+Loša autentifikacija (Broken Authentication)-> username:admin
+					       password: password
 
 
 
-###########################################################################
